@@ -1,26 +1,37 @@
-SQL Data Analysis Portfolio
+COVID-19 Global Data Analysis Dashboard (Tableau)
 
-This repository contains SQL projects demonstrating data cleaning, transformation, and exploratory data analysis using real-world datasets.
+Project Overview
 
-Projects
+This project presents a global analysis of COVID-19 data using Tableau.
+The dashboard visualizes infection trends, death statistics, and vaccination rates across countries and continents.
 
-1. Layoffs Data Cleaning & Analysis
-- Cleaned raw layoffs dataset using SQL.
-- Removed duplicates and handled null values.
-- Standardized data formats.
-- Performed exploratory analysis to identify layoffs trends by company, industry, and country.
+Dashboard Components
 
-2. COVID-19 Data Exploration
-- Analyzed global COVID-19 cases and vaccination data.
-- Calculated infection rates and death percentages.
-- Explored vaccination progress across countries.
-- Identified trends over time.
+• Total deaths per continent (Bar Chart)
+• Global death percentage KPI
+• Top 10 countries by vaccination percentage (Bubble Chart)
+• Average percent population infected over time (Line Chart)
+• World map showing infection distribution
 
-Tools Used
-- SQL
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
+Tools & Technologies
+
+• Tableau Public
+• Excel / xlsx dataset
+• Data visualization techniques
+
+Key Insights
+
+• Europe recorded the highest number of deaths among continents.
+• Infection rates increased significantly between late 2020 and mid-2021.
+• Several small countries achieved the highest vaccination percentages.
+
+Files Included
+
+Covid project.twbx – Tableau packaged workbook
+Covid dashboard preview.png – Screenshot of the dashboard
+Source dataset used for analysis
 
 Author
-Ahmed Abdelzaher  
+
+Ahmed Abdelzaher
 Senior Project & Operations Engineer | Data Analysis Enthusiast
