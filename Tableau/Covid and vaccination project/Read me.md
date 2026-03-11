@@ -31,7 +31,8 @@ Covid project.twbx – Tableau packaged workbook
 Covid dashboard preview.png – Screenshot of the dashboard
 Source dataset used for analysis
 
-Author
 
-Ahmed Abdelzaher
-Senior Project & Operations Engineer | Data Analysis Enthusiast
+Author
+Ahmed Abdelzaher  
+PMP-Certified Senior Project & Operations Engineer  
+Learning Data Analysis | SQL | Tableau | Power BI
