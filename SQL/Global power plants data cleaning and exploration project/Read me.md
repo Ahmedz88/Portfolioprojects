@@ -1,120 +1,104 @@
-Global Power Plants Analysis & Generation Estimation
+🌍 Global Power Plants Data Engineering & Generation Analysis
 
-Project Overview
+📌 Project Overview
 
-This project analyzes global power plant data to uncover insights about energy production, fuel mix, and plant performance. It focuses on actual vs estimated generation, capacity utilization, and energy trends across countries and fuel types.
+This project delivers a complete data engineering and analytical pipeline for global power plant data using SQL. It transforms raw, inconsistent data into a clean, analysis-ready dataset and derives key performance insights related to electricity generation, capacity utilization, and energy mix.
 
-The analysis is based on the Global Power Plant Database, which includes detailed information on power plants worldwide such as capacity, fuel type, and electricity generation.
+The work goes beyond basic analysis by incorporating data validation, transformation logic, and performance-oriented querying, aligned with real-world engineering practices.
 
+---
 
-Objectives
+🎯 Objectives
 
-Analyze global electricity generation by country and fuel type
-Compare actual generation vs estimated generation
-Calculate capacity factor as a key performance indicator
-Identify top-performing and underperforming power plants
-Evaluate renewable vs non-renewable energy contribution
-Assess generation growth trends over time
+	1. Build a clean and reliable data model from raw power plant data
+	2. Ensure data integrity and consistency through constraints and validation
+	3. Prepare the dataset for generation and performance analysis
+	4. Enable calculation of engineering KPIs (e.g., capacity factor)
+	5. Support insights on energy mix, generation trends, and efficiency
 
+---
 
-Dataset Description
+⚙️ Data Engineering & SQL Implementation
 
-The dataset contains the following key fields:
+🔹 1. Data Staging & Architecture
 
-`name` – Power plant name
-`country_long` – Country
-`primary_fuel` – Main energy source
-`capacity_mw` – Installed capacity (MW)
-`generation_gwh_2013–2017` – Annual electricity generation
-`estimated_generation_gwh` – Estimated annual generation
-`commissioning_year` – Year of operation start
-`latitude`, `longitude` – Location
+	1. Created a staging table to isolate raw data from transformed data
+	2. Preserved original dataset integrity while enabling safe transformations
 
+🔹 2. Data Quality & Validation
 
-Methodology
+	1. Applied Primary Key constraints to enforce uniqueness
+	2. Performed duplicate detection and validation checks
+	3. Identified and handled inconsistent and missing values
 
-1. Data Cleaning
+🔹 3. Data Cleaning & Standardization
 
-Removed null and invalid values
-Standardized fuel types
-Validated capacity and generation fields
+	1. Resolved character encoding issues in plant names (e.g., special characters)
+	2. Standardized textual fields for consistency across the dataset
+	3. Cleaned and validated categorical data such as fuel types
 
-2. Feature Engineering
+🔹 4. Data Type Transformation
 
-Capacity Factor Calculation
+	1. Converted generation columns from string (NVARCHAR) to numeric types
+	2. Ensured all numerical fields are properly formatted for calculations
+	3. Replaced raw columns with cleaned, structured equivalents
 
-  Capacity Factor = Actual Generation / (Capacity × 8760)
+🔹 5. Data Modeling Optimization
 
-Forecast Error
+	1. Structured dataset for efficient querying and scalability
+	2. Improved query performance by eliminating invalid and redundant data
 
-  Error (%) = (Actual - Estimated) / Estimated
+---
 
-Classified plants into:
+📊 Analytical Capabilities Enabled
 
-  Renewable (Solar, Wind, Hydro)
-  Non-renewable (Coal, Gas, Oil, Nuclear)
+🔹 Generation Analysis
 
+	1. Aggregated electricity generation across multiple years
+	2. Compared actual vs estimated generation
 
-Key Analysis
+🔹 Performance Metrics
 
-Global Generation Trends
+	1. Calculated Capacity Factor to measure plant utilization
+	2. Evaluated plant-level and fuel-level efficiency
 
-Total generation analyzed across multiple years (2013–2017)
-Identified year-over-year growth patterns
+🔹 Energy Mix Insights
 
-Fuel Mix Analysis
+	1. Analyzed distribution of renewable vs non-renewable energy
+	2. Compared generation contribution by fuel type
 
-Compared contribution of different energy sources
-Observed dominance of fossil fuels vs growth in renewables
+🔹 Data Reliability Insights
 
-Country-Level Insights
+	1. Identified inconsistencies between forecasted and actual generation
+	2. Enabled accuracy assessment of estimation models
 
-Ranked countries by total generation
-Evaluated renewable energy share per country
+---
 
-Performance Metrics
+📈 Key Value Delivered
 
-Capacity factor per plant and fuel type
-Identification of high-efficiency plants
+	1. Transformed raw dataset into a trusted analytical data source
+	2. Enabled engineering-level KPIs used in power and energy sectors
+	3. Improved data quality, usability, and performance
+	4. Built a foundation for advanced analytics and visualization (e.g., Power BI dashboards)
 
-Forecast Accuracy
+---
 
-Compared actual vs estimated generation
-Highlighted plants with highest deviation
+🛠️ Tools & Technologies
 
+	1. SQL (Data Cleaning, Transformation, Analysis)
+	2. Relational Database Systems (SQL Server / PostgreSQL)
+	3. Excel / CSV (Data Source)
 
+---
 
-Tools & Technologies
+🚀 Future Enhancements
 
-SQL (Data analysis & transformation)
-Excel / CSV (Data source handling)
+	1. CO₂ emissions estimation based on fuel type
+	2. Predictive modeling for generation forecasting
+	3. Integration with real-time operational data (SCADA)
+	4. Interactive dashboards for executive reporting
 
-
-
-Sample Insights
-
-A small number of plants contribute significantly to total generation
-Nuclear and coal plants typically show higher capacity factors
-Renewable energy shows rapid growth but lower utilization rates
-Forecast models may significantly over/underestimate generation
-
-
-How to Use
-
-1. Import dataset into your SQL database
-2. Run the provided SQL queries for analysis
-3. (Optional) Connect to Power BI for visualization
-4. Explore insights and build dashboards
-
-
-
-Future Enhancements
-
-Add CO₂ emissions estimation per plant
-Integrate real-time generation data
-Develop predictive models for generation forecasting
-Build interactive dashboards
-
+---
 
 
 Author
